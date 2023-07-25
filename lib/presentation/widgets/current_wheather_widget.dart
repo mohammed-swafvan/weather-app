@@ -3,7 +3,6 @@ import 'package:weatherapp_starter_project/model/current_model.dart';
 import 'package:weatherapp_starter_project/presentation/utils/custom_colors.dart';
 import 'package:weatherapp_starter_project/presentation/utils/global_variables.dart';
 import 'package:weatherapp_starter_project/presentation/utils/utils.dart';
-import 'package:weatherapp_starter_project/presentation/widgets/current_details_icon_widget.dart';
 
 class CurrentWheatherWidget extends StatelessWidget {
   const CurrentWheatherWidget({super.key, required this.wheatherDataCurrent});
@@ -49,7 +48,7 @@ class CurrentWheatherWidget extends StatelessWidget {
                   ),
                 ),
                 TextSpan(
-                  text: "${wheatherDataCurrent.currentModel.weather![0].description}°",
+                  text: "${wheatherDataCurrent.currentModel.weather![0].description}",
                   style: customTextStyle(
                     color: CustomColor.kBlueGrey,
                     size: 10,
@@ -68,7 +67,7 @@ class CurrentWheatherWidget extends StatelessWidget {
     return Column(
       mainAxisSize: MainAxisSize.min,
       children: [
-        Row(
+        const Row(
           mainAxisAlignment: MainAxisAlignment.spaceAround,
           children: [
             CurrentDeatailIconWidget(icon: "assets/icons/windspeed.png"),
@@ -107,6 +106,26 @@ class CurrentWheatherWidget extends StatelessWidget {
           ],
         ),
       ],
+    );
+  }
+}
+
+class CurrentDeatailIconWidget extends StatelessWidget {
+  const CurrentDeatailIconWidget({super.key, required this.icon});
+  final String icon;
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      height: 70,
+      width: 70,
+      padding: const EdgeInsets.all(16),
+      decoration: const BoxDecoration(
+        color: CustomColor.cardColor,
+        borderRadius: BorderRadius.all(
+          Radius.circular(15),
+        ),
+      ),
+      child: Image.asset(icon),
     );
   }
 }

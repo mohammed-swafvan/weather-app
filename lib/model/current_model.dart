@@ -12,6 +12,7 @@ class CurrentModel {
   int? clouds;
   double? windSpeed;
   List<Weather>? weather;
+  int? visibility;
 
   CurrentModel({
     this.temp,
@@ -19,6 +20,7 @@ class CurrentModel {
     this.clouds,
     this.windSpeed,
     this.weather,
+    this.visibility,
   });
 
   factory CurrentModel.fromJson(Map<String, dynamic> json) => CurrentModel(
@@ -27,6 +29,7 @@ class CurrentModel {
         clouds: json['clouds'] as int?,
         windSpeed: (json['wind_speed'] as num?)?.toDouble(),
         weather: (json['weather'] as List<dynamic>?)?.map((e) => Weather.fromJson(e as Map<String, dynamic>)).toList(),
+        visibility: json['visibility'] as int?,
       );
 
   Map<String, dynamic> toJson() => {
@@ -35,6 +38,7 @@ class CurrentModel {
         'clouds': clouds,
         'wind_speed': windSpeed,
         'weather': weather?.map((e) => e.toJson()).toList(),
+        'visibility': visibility,
       };
 }
 

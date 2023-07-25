@@ -43,7 +43,7 @@ class _HeaderWidgetState extends State<HeaderWidget> {
             style: customTextStyle(
               color: CustomColor.kBlackColor,
               size: 30,
-              fontWeight: FontWeight.bold,
+              fontWeight: FontWeight.w600,
             ),
           ),
           Text(

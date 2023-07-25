@@ -4,6 +4,7 @@ import 'package:weatherapp_starter_project/controller/global_controller.dart';
 import 'package:weatherapp_starter_project/presentation/utils/global_variables.dart';
 import 'package:weatherapp_starter_project/presentation/widgets/current_wheather_widget.dart';
 import 'package:weatherapp_starter_project/presentation/widgets/header_widget.dart';
+import 'package:weatherapp_starter_project/presentation/widgets/hourly_data_widget.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -30,6 +31,10 @@ class HomeScreen extends StatelessWidget {
                     CurrentWheatherWidget(
                       wheatherDataCurrent: globalController.getData().getCurrentWheather(),
                     ),
+                    kHeight25,
+                    HourlyDataWidget(
+                      wheatherDataHourly: globalController.getData().getHourlyWeather(),
+                    )
                   ],
                 ),
         ),
