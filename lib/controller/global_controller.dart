@@ -1,7 +1,7 @@
 import 'package:geolocator/geolocator.dart';
 import 'package:get/get.dart';
 import 'package:weatherapp_starter_project/api/fetch_wheather.dart';
-import 'package:weatherapp_starter_project/model/wheather_data.dart';
+import 'package:weatherapp_starter_project/model/weather_data.dart';
 
 class GlobalController extends GetxController {
   // variables
@@ -14,8 +14,8 @@ class GlobalController extends GetxController {
   RxDouble getLatitude() => latitude;
   RxDouble getLongitude() => longitude;
 
-  final wheatherData = WheatherData().obs;
-  WheatherData getData() {
+  final wheatherData = WeatherData().obs;
+  WeatherData getData() {
     return wheatherData.value;
   }
 
@@ -55,7 +55,6 @@ class GlobalController extends GetxController {
       (value) {
         latitude.value = value.latitude;
         longitude.value = value.longitude;
-
         //calling wheather api
         return FetchWheatherApi().proccessData(value.latitude, value.longitude).then((value) {
           wheatherData.value = value;

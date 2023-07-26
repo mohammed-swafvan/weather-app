@@ -6,7 +6,7 @@ import 'package:weatherapp_starter_project/presentation/utils/utils.dart';
 
 class CurrentWheatherWidget extends StatelessWidget {
   const CurrentWheatherWidget({super.key, required this.wheatherDataCurrent});
-  final WheatherDataCurrent wheatherDataCurrent;
+  final WeatherDataCurrent wheatherDataCurrent;
 
   @override
   Widget build(BuildContext context) {
@@ -32,7 +32,7 @@ class CurrentWheatherWidget extends StatelessWidget {
             height: 80,
           ),
           Container(
-            height: 50,
+            height: 45,
             width: 1,
             color: CustomColor.dividerLine,
           ),
@@ -50,7 +50,7 @@ class CurrentWheatherWidget extends StatelessWidget {
                 TextSpan(
                   text: "${wheatherDataCurrent.currentModel.weather![0].description}",
                   style: customTextStyle(
-                    color: CustomColor.kBlueGrey,
+                    color: CustomColor.kGreyColor,
                     size: 10,
                     fontWeight: FontWeight.w500,
                   ),

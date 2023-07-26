@@ -8,7 +8,7 @@ import 'package:weatherapp_starter_project/presentation/utils/utils.dart';
 class DailyDataForeCastWidget extends StatelessWidget {
   const DailyDataForeCastWidget({super.key, required this.wheatherDataDaily});
 
-  final WheatherDataDaily wheatherDataDaily;
+  final WeatherDataDaily wheatherDataDaily;
 
   String getDay(final day) {
     DateTime date = DateTime.fromMillisecondsSinceEpoch(day * 1000);
@@ -47,45 +47,46 @@ class DailyDataForeCastWidget extends StatelessWidget {
   }
 
   Widget dailyListWidget(screenHeight) {
-    return Container(
-      padding: const EdgeInsets.symmetric(vertical: 12, horizontal: 8),
-      height: screenHeight * 0.4,
-      child: ListView.separated(
-        scrollDirection: Axis.vertical,
-        itemCount: wheatherDataDaily.daily.length > 7 ? 7 : wheatherDataDaily.daily.length,
-        itemBuilder: (context, index) {
-          return SizedBox(
-            height: 58,
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                Text(
-                  getDay(wheatherDataDaily.daily[index].dt),
-                  style: customTextStyle(
-                    color: CustomColor.kBlackColor,
-                    size: 12,
-                    fontWeight: FontWeight.w500,
+    return Expanded(
+      child: Container(
+        padding: const EdgeInsets.symmetric(vertical: 12, horizontal: 8),
+        child: ListView.separated(
+          scrollDirection: Axis.vertical,
+          itemCount: wheatherDataDaily.daily.length > 7 ? 7 : wheatherDataDaily.daily.length,
+          itemBuilder: (context, index) {
+            return SizedBox(
+              height: 58,
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Text(
+                    getDay(wheatherDataDaily.daily[index].dt),
+                    style: customTextStyle(
+                      color: CustomColor.kBlackColor,
+                      size: 12,
+                      fontWeight: FontWeight.w500,
+                    ),
                   ),
-                ),
-                GlobalVariables.kWidth5,
-                Image.asset(
-                  "assets/weather/${wheatherDataDaily.daily[index].weather![0].icon}.png",
-                  height: 35,
-                  width: 35,
-                ),
-                Text(
-                  '${wheatherDataDaily.daily[index].temp!.max}°/${wheatherDataDaily.daily[index].temp!.min}',
-                  style: customTextStyle(
-                    color: CustomColor.kBlackColor,
-                    size: 14,
-                    fontWeight: FontWeight.w500,
+                  GlobalVariables.kWidth5,
+                  Image.asset(
+                    "assets/weather/${wheatherDataDaily.daily[index].weather![0].icon}.png",
+                    height: 35,
+                    width: 35,
                   ),
-                ),
-              ],
-            ),
-          );
-        },
-        separatorBuilder: (context, index) => const Divider(thickness: 0.6),
+                  Text(
+                    '${wheatherDataDaily.daily[index].temp!.max}°/${wheatherDataDaily.daily[index].temp!.min}',
+                    style: customTextStyle(
+                      color: CustomColor.kBlackColor,
+                      size: 14,
+                      fontWeight: FontWeight.w500,
+                    ),
+                  ),
+                ],
+              ),
+            );
+          },
+          separatorBuilder: (context, index) => const Divider(thickness: 0.6),
+        ),
       ),
     );
   }

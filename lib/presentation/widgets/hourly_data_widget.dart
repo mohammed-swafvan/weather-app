@@ -8,7 +8,7 @@ import 'package:weatherapp_starter_project/presentation/utils/utils.dart';
 
 class HourlyDataWidget extends StatelessWidget {
   const HourlyDataWidget({super.key, required this.wheatherDataHourly});
-  final WheatherDataHourly wheatherDataHourly;
+  final WeatherDataHourly wheatherDataHourly;
 
   @override
   Widget build(BuildContext context) {

@@ -8,5 +8,5 @@ class GlobalVariables {
   static SizedBox kHeight25 = const SizedBox(height: 25);
 
   static SizedBox kWidth5 = const SizedBox(width: 5);
-  static SizedBox kWidth10 = const SizedBox(width: 10);
+  static SizedBox kWidth15 = const SizedBox(width: 15);
 }

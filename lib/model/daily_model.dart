@@ -1,11 +1,11 @@
 import 'package:weatherapp_starter_project/model/current_model.dart';
 
 
-class WheatherDataDaily {
+class WeatherDataDaily {
   List<DailyModel> daily;
-  WheatherDataDaily({required this.daily});
+  WeatherDataDaily({required this.daily});
 
-  factory WheatherDataDaily.fromJson(Map<String, dynamic> json) => WheatherDataDaily(
+  factory WeatherDataDaily.fromJson(Map<String, dynamic> json) => WeatherDataDaily(
         daily: List<DailyModel>.from(
           json['daily'].map(
             (e) => DailyModel.fromJson(e),

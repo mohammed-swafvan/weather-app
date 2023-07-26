@@ -1,4 +1,4 @@
-#Tue Jul 25 09:41:26 IST 2023
-base.0=/Volumes/Untitled/Users/swafvan/my projects/wheather_app/build/app/intermediates/dex/debug/mergeDexDebug/classes.dex
+#Wed Jul 26 17:53:11 IST 2023
+base.0=/Volumes/Untitled/Users/swafvan/my projects/weather_app/build/app/intermediates/dex/debug/mergeDexDebug/classes.dex
 path.0=classes.dex
 renamed.0=classes.dex

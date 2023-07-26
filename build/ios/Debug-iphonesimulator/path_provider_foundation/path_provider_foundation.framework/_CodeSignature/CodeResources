@@ -42,7 +42,7 @@
 		</data>
 		<key>Modules/path_provider_foundation.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		q5oSHJuZIhBwtQdL/uvPl20nVS4=
+		L15ygf5NvmifYarJyYRUcQza2fM=
 		</data>
 		<key>Modules/path_provider_foundation.swiftmodule/arm64.swiftdoc</key>
 		<data>
@@ -50,7 +50,7 @@
 		</data>
 		<key>Modules/path_provider_foundation.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		q5oSHJuZIhBwtQdL/uvPl20nVS4=
+		L15ygf5NvmifYarJyYRUcQza2fM=
 		</data>
 		<key>Modules/path_provider_foundation.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -58,7 +58,7 @@
 		</data>
 		<key>Modules/path_provider_foundation.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		jp/N6luNe3VfX4X50EaAulFwIjs=
+		4zHPgk7WfLX5bKKFZq25tZ6/ndI=
 		</data>
 		<key>Modules/path_provider_foundation.swiftmodule/x86_64.swiftdoc</key>
 		<data>
@@ -66,7 +66,7 @@
 		</data>
 		<key>Modules/path_provider_foundation.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		jp/N6luNe3VfX4X50EaAulFwIjs=
+		4zHPgk7WfLX5bKKFZq25tZ6/ndI=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -131,7 +131,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			/4QwHnsv8UmwOI+V2rPu6GJEWQ6DXi0ORQjG0YlffXg=
+			gsxbcdIf67ew649sIBttM0C18BozD2UNEVm69iExoto=
 			</data>
 		</dict>
 		<key>Modules/path_provider_foundation.swiftmodule/arm64.swiftdoc</key>
@@ -145,7 +145,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			/4QwHnsv8UmwOI+V2rPu6GJEWQ6DXi0ORQjG0YlffXg=
+			gsxbcdIf67ew649sIBttM0C18BozD2UNEVm69iExoto=
 			</data>
 		</dict>
 		<key>Modules/path_provider_foundation.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -159,7 +159,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			hDBfQAAb0MUZn+IY2rCh7nKIqE7ci0iaer9A+zo0zIc=
+			UVEJVTtucJS29d0+9A0LFDTPDVKQUwKcuwEz9rCb8/E=
 			</data>
 		</dict>
 		<key>Modules/path_provider_foundation.swiftmodule/x86_64.swiftdoc</key>
@@ -173,7 +173,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			hDBfQAAb0MUZn+IY2rCh7nKIqE7ci0iaer9A+zo0zIc=
+			UVEJVTtucJS29d0+9A0LFDTPDVKQUwKcuwEz9rCb8/E=
 			</data>
 		</dict>
 	</dict>

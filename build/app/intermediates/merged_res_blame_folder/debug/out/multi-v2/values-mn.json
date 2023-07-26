@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/Volumes/Untitled/Users/swafvan/my projects/wheather_app/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-mn/values-mn.xml",
+            "outputFile": "/Volumes/Untitled/Users/swafvan/my projects/weather_app/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-mn/values-mn.xml",
             "map": [
                 {
                     "source": "/Users/swafvan/.gradle/caches/transforms-3/6710ee2e3546b398da00e75003abfc33/transformed/core-1.9.0/res/values-mn/values-mn.xml",

@@ -1,10 +1,10 @@
 import 'current_model.dart';
 
-class WheatherDataHourly {
+class WeatherDataHourly {
   List<HourlyModel> hourlyModel;
-  WheatherDataHourly({required this.hourlyModel});
+  WeatherDataHourly({required this.hourlyModel});
 
-  factory WheatherDataHourly.fromJson(Map<String, dynamic> json) => WheatherDataHourly(
+  factory WeatherDataHourly.fromJson(Map<String, dynamic> json) => WeatherDataHourly(
         hourlyModel: List<HourlyModel>.from(
           json['hourly'].map(
             (e) => HourlyModel.fromJson(e),

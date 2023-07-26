@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/Volumes/Untitled/Users/swafvan/my projects/wheather_app/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-night-v8/values-night-v8.xml",
+            "outputFile": "/Volumes/Untitled/Users/swafvan/my projects/weather_app/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-night-v8/values-night-v8.xml",
             "map": [
                 {
-                    "source": "/Volumes/Untitled/Users/swafvan/my projects/wheather_app/android/app/src/main/res/values-night/styles.xml",
+                    "source": "/Volumes/Untitled/Users/swafvan/my projects/weather_app/android/app/src/main/res/values-night/styles.xml",
                     "from": {
                         "startLines": "3,14",
                         "startColumns": "4,4",

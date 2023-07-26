@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/Volumes/Untitled/Users/swafvan/my projects/wheather_app/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-be/values-be.xml",
+            "outputFile": "/Volumes/Untitled/Users/swafvan/my projects/weather_app/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-be/values-be.xml",
             "map": [
                 {
                     "source": "/Users/swafvan/.gradle/caches/transforms-3/6b0daa5fb4c2eb7e8b55778df9b972f6/transformed/jetified-play-services-basement-18.1.0/res/values-be/values.xml",

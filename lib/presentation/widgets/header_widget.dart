@@ -51,7 +51,7 @@ class _HeaderWidgetState extends State<HeaderWidget> {
               dateTime,
             ),
             style: customTextStyle(
-              color: CustomColor.kBlueGrey,
+              color: CustomColor.kGreyColor,
               size: 12,
               fontWeight: FontWeight.w500,
             ),

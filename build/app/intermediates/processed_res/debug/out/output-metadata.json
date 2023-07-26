@@ -4,7 +4,7 @@
     "type": "PROCESSED_RES",
     "kind": "Directory"
   },
-  "applicationId": "com.example.weatherapp_starter_project",
+  "applicationId": "com.example.weather_app",
   "variantName": "debug",
   "elements": [
     {
