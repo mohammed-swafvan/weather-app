@@ -14,7 +14,7 @@ class CurrentWheatherWidget extends StatelessWidget {
       mainAxisSize: MainAxisSize.min,
       children: [
         temperatureAreaWidget(),
-        kHeight15,
+        GlobalVariables.kHeight15,
         currentWeatherMoreDetailsWidget(),
       ],
     );
@@ -75,7 +75,7 @@ class CurrentWheatherWidget extends StatelessWidget {
             CurrentDeatailIconWidget(icon: "assets/icons/humidity.png"),
           ],
         ),
-        kHeight5,
+        GlobalVariables.kHeight5,
         Row(
           mainAxisAlignment: MainAxisAlignment.spaceAround,
           children: [
@@ -92,7 +92,7 @@ class CurrentWheatherWidget extends StatelessWidget {
               style: customTextStyle(
                 color: CustomColor.kBlackColor,
                 size: 10,
-                fontWeight: FontWeight.w400,
+                fontWeight: FontWeight.w500,
               ),
             ),
             Text(

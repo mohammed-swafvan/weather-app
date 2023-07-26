@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/route_manager.dart';
 import 'package:weatherapp_starter_project/presentation/screens/home_screen.dart';
+import 'package:weatherapp_starter_project/presentation/utils/utils.dart';
 
 void main() {
   runApp(const MyApp());
@@ -14,9 +15,7 @@ class MyApp extends StatelessWidget {
     return GetMaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Weather',
-      theme: ThemeData(
-        primarySwatch: Colors.green,
-      ),
+      theme: appTheme(),
       home: const HomeScreen(),
     );
   }

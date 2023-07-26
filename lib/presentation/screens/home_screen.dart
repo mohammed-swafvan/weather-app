@@ -3,6 +3,7 @@ import 'package:get/get.dart';
 import 'package:weatherapp_starter_project/controller/global_controller.dart';
 import 'package:weatherapp_starter_project/presentation/utils/global_variables.dart';
 import 'package:weatherapp_starter_project/presentation/widgets/current_wheather_widget.dart';
+import 'package:weatherapp_starter_project/presentation/widgets/daily_data_forecast.dart';
 import 'package:weatherapp_starter_project/presentation/widgets/header_widget.dart';
 import 'package:weatherapp_starter_project/presentation/widgets/hourly_data_widget.dart';
 
@@ -25,16 +26,19 @@ class HomeScreen extends StatelessWidget {
               : ListView(
                   scrollDirection: Axis.vertical,
                   children: [
-                    kHeight10,
+                    GlobalVariables.kHeight10,
                     const HeaderWidget(),
-                    kHeight15,
+                    GlobalVariables.kHeight15,
                     CurrentWheatherWidget(
                       wheatherDataCurrent: globalController.getData().getCurrentWheather(),
                     ),
-                    kHeight25,
+                    GlobalVariables.kHeight25,
                     HourlyDataWidget(
                       wheatherDataHourly: globalController.getData().getHourlyWeather(),
-                    )
+                    ),
+                    DailyDataForeCastWidget(
+                      wheatherDataDaily: globalController.getData().getDailyWeather(),
+                    ),
                   ],
                 ),
         ),

@@ -8,6 +8,8 @@ class WheatherDataCurrent {
 
 class CurrentModel {
   double? temp;
+  double? uvi;
+  double? feelsLike;
   int? humidity;
   int? clouds;
   double? windSpeed;
@@ -16,6 +18,8 @@ class CurrentModel {
 
   CurrentModel({
     this.temp,
+    this.uvi,
+    this.feelsLike,
     this.humidity,
     this.clouds,
     this.windSpeed,
@@ -25,6 +29,8 @@ class CurrentModel {
 
   factory CurrentModel.fromJson(Map<String, dynamic> json) => CurrentModel(
         temp: (json['temp'] as num?)?.toDouble(),
+        uvi: json['uvi'] as double?,
+        feelsLike: json['feels_like'] as double?,
         humidity: json['humidity'] as int?,
         clouds: json['clouds'] as int?,
         windSpeed: (json['wind_speed'] as num?)?.toDouble(),
@@ -39,6 +45,8 @@ class CurrentModel {
         'wind_speed': windSpeed,
         'weather': weather?.map((e) => e.toJson()).toList(),
         'visibility': visibility,
+        'feels_like': feelsLike,
+        'uvi': uvi,
       };
 }
 

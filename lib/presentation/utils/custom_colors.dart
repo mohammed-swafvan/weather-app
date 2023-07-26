@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 class CustomColor {
+  static Color kWhiteColor = Colors.white;
   static const dividerLine = Color(0xffE4E4EE);
   static Color kBlackColor = Colors.black;
   static Color kBlueGrey = Colors.blueGrey;

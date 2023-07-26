@@ -53,6 +53,7 @@ class HourlyDataWidget extends StatelessWidget {
                 cardIndex.value = index;
               },
               child: Container(
+                margin: const EdgeInsets.only(left: 16),
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(12),
                   boxShadow: [
@@ -76,6 +77,8 @@ class HourlyDataWidget extends StatelessWidget {
                   temp: wheatherDataHourly.hourlyModel[index].temp!.floor(),
                   timeStamp: wheatherDataHourly.hourlyModel[index].dt!.floor(),
                   weatherIcon: wheatherDataHourly.hourlyModel[index].weather![0].icon!,
+                  index: index,
+                  cardIndex: cardIndex.toInt(),
                 ),
               ),
             ),
@@ -87,10 +90,19 @@ class HourlyDataWidget extends StatelessWidget {
 }
 
 class HourlyDetails extends StatelessWidget {
-  const HourlyDetails({super.key, required this.temp, required this.timeStamp, required this.weatherIcon});
+  const HourlyDetails({
+    super.key,
+    required this.temp,
+    required this.timeStamp,
+    required this.weatherIcon,
+    required this.index,
+    required this.cardIndex,
+  });
   final int temp;
   final int timeStamp;
   final String weatherIcon;
+  final int index;
+  final int cardIndex;
 
   String getTime(final timeStamp) {
     DateTime dateTime = DateTime.fromMillisecondsSinceEpoch(timeStamp * 1250);
@@ -110,6 +122,11 @@ class HourlyDetails extends StatelessWidget {
             getTime(
               timeStamp,
             ),
+            style: customTextStyle(
+              color: index == cardIndex ? CustomColor.kWhiteColor : CustomColor.kBlackColor,
+              size: 14,
+              fontWeight: FontWeight.w500,
+            ),
           ),
           Image.asset(
             "assets/weather/$weatherIcon.png",
@@ -119,7 +136,7 @@ class HourlyDetails extends StatelessWidget {
           Text(
             '$temp°',
             style: customTextStyle(
-              color: CustomColor.kBlackColor,
+              color: index == cardIndex ? CustomColor.kWhiteColor : CustomColor.kBlackColor,
               size: 14,
               fontWeight: FontWeight.bold,
             ),
